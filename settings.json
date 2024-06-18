@@ -1,0 +1,142 @@
+{
+    // Editor tab config
+    "workbench.editor.wrapTabs": true,
+    "workbench.editor.tabActionCloseVisibility": false,
+    "workbench.editor.tabActionUnpinVisibility": false,
+  
+    "editor.minimap.enabled": false,
+  
+    // Esint + Prettier
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "always"
+    },
+
+    // Editor settings
+    "editor.cursorBlinking": "expand",
+    "files.autoSave": "onWindowChange",
+    "editor.scrollbar.horizontalScrollbarSize": 10,
+    "editor.scrollbar.verticalScrollbarSize": 5,
+    "editor.fontSize": 11.5,
+    "editor.fontWeight": "bold",
+    "window.zoomLevel": -1,
+    "workbench.iconTheme": "material-icon-theme",
+    "prettier.configPath": ".prettierrc",
+  
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.linkedEditing": true,
+    "editor.semanticHighlighting.enabled": true,
+    "workbench.colorTheme": "Monokai Alt",
+  
+    // Override Monokai Alt Color Scheme
+    "editor.semanticTokenColorCustomizations": {
+      "enabled": true,
+      "rules": {
+        "type": "#F8F8F2"
+      }
+    },
+  
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": ["meta.import", "variable.other.readwrite.alias"],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "meta.import",
+            "string.quoted.single",
+            "string.quoted.double"
+          ],
+          "settings": {
+            "fontStyle": "normal"
+          }
+        },
+        {
+          "name": "HTML TAGS",
+          "scope": ["entity.name.tag.css"],
+          "settings": {
+            "foreground": "#F92672"
+          }
+        },
+        {
+          "name": "Storage type",
+          "scope": "storage.type",
+          "settings": {
+            "fontStyle": "none",
+            "foreground": "#F92672"
+          }
+        },
+        {
+          "name": "Class name",
+          "scope": ["support.type.primitive"],
+          "settings": {
+            "fontStyle": "normal",
+            "foreground": "#F92672"
+          }
+        },
+        {
+          "name": "HTML tags",
+          "scope": [
+            "support.class.component",
+            "entity.name.tag",
+            "meta.type.parameters",
+            "keyword.operator.assignment",
+            "punctuation.separator.key-value",
+            "punctuation.destructuring",
+            "variable.other.assignment.ini"
+          ],
+          "settings": {
+            "foreground": "#F92672"
+          }
+        },
+        {
+          "name": "Tag attribute",
+          "scope": ["entity.other.attribute-name", "meta.function.parameter"],
+          "settings": {
+            "foreground": "#FD971F"
+          }
+        },
+        {
+          "name": "Class name",
+          "scope": [
+            "entity.name.type",
+            "meta.type.annotation",
+            "meta.object.type",
+            "support.class",
+            "support.variable",
+            "punctuation.section.embedded"
+          ],
+          "settings": {
+            "foreground": "#F8F8F2",
+            "fontStyle": "normal"
+          }
+        },
+        {
+          "scope": ["entity.name.type.class"],
+          "settings": {
+            "foreground": "#A6E22E"
+          }
+        },
+        {
+          "name": "Object key",
+          "scope": ["meta.object-literal.key"],
+          "settings": {
+            "foreground": "#66D9EF"
+          }
+        },
+        {
+          "name": "Other variable",
+          "scope": ["variable.other.property", "variable.other.block"],
+          "settings": {
+            "foreground": "#66D9EF"
+          }
+        }
+      ]
+    },
+    "editor.bracketPairColorization.enabled": false
+  }
+  
